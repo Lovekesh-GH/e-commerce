@@ -1,16 +1,30 @@
 from django.shortcuts import render
 from django.http import JsonResponse
+from django.contrib.auth.forms import UserCreationForm
 import json
 import datetime
-from .models import * 
-from .utils import cookieCart, cartData, guestOrder
+from store.models import * 
+from store.utils import *
+
+
+def registerpage(request):
+	form = UserCreationForm()
+
+	if request.method == 'POST':
+		form = UserCreationForm(request.POST)
+		if form.is_valid():
+			form.save()
+		
+	context = {'form':form}
+	return render(request, 'store/register.html', context)
+
+def loginpage(request):
+	context = {}
+	return render(request, 'store/login.html', context)
 
 def store(request):
 	data = cartData(request)
-
 	cartItems = data['cartItems']
-	order = data['order']
-	items = data['items']
 
 	products = Product.objects.all()
 	context = {'products':products, 'cartItems':cartItems}

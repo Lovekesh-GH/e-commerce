@@ -1,0 +1,22 @@
+{
+    "name": "E-Commerce",
+    "short_name": "E-Commerce",
+    "start_url": "/",
+    "scope": ".",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#FFFFFF",
+    "description": "We are here with the best items that will make your life Comfortable and will provide you with basics necessities of your daily chores.",
+    "dir": "ltr",
+    "lang": "en-US",
+    "orientation": "portrait-primary",
+    
+    "icons": [
+        {
+          "src": "/static/images/logo.png",
+          "type": "image/png",
+          "sizes": "512x512",
+          "purpose": "maskable any"
+        }         
+      ]
+  }

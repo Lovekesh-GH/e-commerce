@@ -10,6 +10,8 @@
 
 	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
 
+	<link rel="manifest" href="{% url 'manifest' %}"> 
+
 	<script type="text/javascript">var user ='{{request.user}}'
 	
 	function getToken(name) {
@@ -56,7 +58,22 @@
 			document.cookie ='cart=' + JSON.stringify(cart) + ";domain=;path=/"
 		}
 		console.log('Cart:', cart)
+	    
+	</script>
 	
+	<!-- Service Worker Registration -->
+	<script type="text/javascript">
+		// Initialize the service worker
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/serviceworker.js').then(function (registration) {
+				// Registration was successful
+				console.log('django-progressive-web-app: ServiceWorker registration successful');
+			}, function (err) {
+				// registration failed :(
+				console.log('django-progressive-web-app: ServiceWorker registration failed: ', err);
+			});
+		}
+
 	</script>
 
 </head>
