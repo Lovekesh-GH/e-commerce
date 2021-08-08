@@ -1,6 +1,6 @@
 # <span style="color:#fff; font-family: 'Bebas Neue'; font-size: 2em;">**Shopify** </span>
 
-<span style="color: #f2cf4a; font-family: Babas; font-size: 1.7em;">Introduction
+## <span style="color: #f2cf4a; font-family: Babas; font-size: 1.7em;">Introduction
 </span>
 
 <span style="color:#fff; font-family: 'Bebas Neue'; font-size: 1.1em;">***Shopify*** is a e-commerce website.
@@ -40,45 +40,43 @@ $ git clone https://github.com/Lovekesh-GH/e-commerce.git
 $ cd e-commerce
 ```
 
->>
 
 - Create a virtual environment to install dependencies in and activate it:
   ```sh
-    $ python -m venv venv
+    $ python3 -m venv venv
     $ source venv/bin/activate
     ```
 
 - Install the django using
     ```sh
-    pip3 install django
+    $ pip3 install django
     ```
 
 - Install all the dependencies using
     ```sh
-    pip3 install -r requirements.txt
+    $ pip3 install -r requirements.txt
     ```
 -  Run the migrations using the following commands         
     ```sh
-    python3 manage.py makemigrations
+    $ python3 manage.py makemigrations
     ```
     ```sh
-    python3 manage.py migrate
+    $ python3 manage.py migrate
     ```
 - Run the Django server by
     ```sh
-    python3 manage.py runserver
+    $ python3 manage.py runserver
     ```
 
 *Note :*  In case you encounter errors during migrations, make sure that you have access rights to *db.sqlite3* file. You can use the following command to rectify permission denied error
 ```sh
-chown *username* db.sqlite3
+$ chown *username* db.sqlite3
 ```
 
 <span style="font-family: times, serif; font-size:14pt; font-style:italic">Run the migrations again to continue. </span>
 
 
 <!-- CONTRIBUTING -->
-
 
 ## <span style="color: #f2cf4a; font-family: Babas; font-size: 1.2em;">Contributing
 </span>
@@ -92,8 +90,7 @@ Contributions are what make the open source community such an amazing place to b
 5. Open a Pull Request
 
 <!-- LICENSE -->
-## <span style="color: #f2cf4a; font-family: Babas; font-size: 1.2em;">License
-</span>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
