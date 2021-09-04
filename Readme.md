@@ -78,7 +78,7 @@ $ chown *username* db.sqlite3
 ----
 <!-- CONTRIBUTING -->
 
-## <span style="color: #f2cf4a; font-family: Babas; font-size: 1.2em;">Contributing
+## 🤝🏻 &nbsp;<span style="color: #f2cf4a; font-family: Babas; font-size: 1.2em;">Contributing
 </span>
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
